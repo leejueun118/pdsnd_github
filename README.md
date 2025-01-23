@@ -1,5 +1,3 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 # 자전거 공유 데이터 분석 프로그램
 
 이 프로그램은 미국의 자전거 공유 데이터를 분석하는 도구입니다. 사용자는 특정 도시, 월, 요일을 선택하여 해당 조건에 맞는 데이터를 필터링하고, 다양한 통계 정보를 출력할 수 있습니다.
@@ -42,14 +40,6 @@
 - `station_stats(df)`: 가장 인기 있는 출발지와 도착지 통계를 계산합니다.
 - `trip_duration_stats(df)`: 총 여행 시간과 평균 여행 시간을 계산합니다.
 - `user_stats(df)`: 사용자 유형, 성별, 출생 연도에 대한 통계를 계산합니다.
-
-### 4. 원시 데이터 표시
-
-`display_raw_data(df)` 함수는 사용자가 요청할 경우 원시 데이터를 5행씩 출력합니다.
-
-### 5. 프로그램 실행 루프
-
-`main()` 함수는 프로그램의 주요 실행 루프를 담당합니다. 사용자가 원하는 조건을 입력받고, 통계 정보를 출력한 후, 프로그램을 다시 실행할지 여부를 묻습니다.
 
 ## 사용 방법
 
