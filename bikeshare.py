@@ -26,7 +26,7 @@ def get_city_input():
     city_names = list(CITY_DATA.keys())
     city = ""
     while city not in city_names:
-        city = input(f"분석할 도시 이름을 입력하세요 {city_names}: ").lower()
+        city = input(f"분석할 도시 이름을 입력해주주세요 {city_names}: ").lower()
     return city
 
 def get_month_input():
