@@ -8,6 +8,7 @@ CITY_DATA = {
     'washington': 'washington.csv'
 }
 
+
 def get_filters():
     """사용자로부터 분석할 도시, 월, 요일을 입력받습니다."""
     print('안녕하세요! 미국 자전거 공유 데이터를 탐색해봅시다!')
