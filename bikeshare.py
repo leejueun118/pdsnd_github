@@ -2,7 +2,6 @@ import time
 import pandas as pd
 import numpy as np
 
-# 도시 이름을 키로 하고 해당 도시의 데이터 파일 경로를 값으로 하는 딕셔너리
 CITY_DATA = {
     'chicago': 'chicago.csv',
     'new york city': 'new_york_city.csv',
@@ -153,19 +152,18 @@ def display_raw_data(df):
 def main():
     """주요 프로그램 실행 루프"""
     while True:
-        city, month, day = get_filters()  # 사용자로부터 필터 입력 받기
-        df = load_data(city, month, day)   # 입력받은 필터로 데이터 불러오기
+        city, month, day = get_filters()
+        df = load_data(city, month, day)
 
         if df.empty:
             print("입력한 조건에 맞는 데이터가 없습니다.")
         else:
-            display_raw_data(df)          # 원시 데이터 표시
-            time_stats(df)                # 시간 통계 계산 및 출력
-            station_stats(df)             # 역 통계 계산 및 출력
-            trip_duration_stats(df)       # 여행 시간 통계 계산 및 출력
-            user_stats(df)                # 사용자 통계 계산 및 출력
+            display_raw_data(df) 
+            time_stats(df) 
+            station_stats(df) 
+            trip_duration_stats(df) 
+            user_stats(df) 
 
-        # 프로그램을 다시 실행할지 여부 묻기
         restart = input('\n다시 시작하시겠습니까? "yes" 또는 "no"를 입력하세요.\n').lower()
         if restart != 'yes':
             print("프로그램을 종료합니다. 감사합니다!")
